@@ -1,0 +1,44 @@
+{
+    "en": {
+      "nav": {
+        "history": "HISTORY",
+        "bespoke": "BESPOKE",
+        "models": "MODELS",
+        "contact": "CONTACT"
+      },
+      "header": {
+        "slogan": "Handcrafted shoes est. 1967"
+      },
+      "section": {
+        "historyTitle": "HISTORY",
+        "historySubtitle": "Our story",
+        "historyText": "If wanting to talk about a family business with tradition, it would be Strugar shoes.",
+        "getToKnowUs": "GET TO KNOW US"
+      },
+      "bespoke": {
+        "title": "BESPOKE",
+        "subtitle": "Our work"
+      }
+    },
+},
+"de": {
+  "nav": {
+    "history": "GESCHICHTE",
+    "bespoke": "MAßANFERTIGUNG",
+    "models": "MODELLE",
+    "contact": "KONTAKT"
+  },
+  "header": {
+    "slogan": "Handgefertigte Schuhe seit 1967"
+  },
+  "section": {
+    "historyTitle": "GESCHICHTE",
+    "historySubtitle": "Unsere Geschichte",
+    "historyText": "Wenn man von einem Familienunternehmen mit Tradition sprechen will, dann sind es Strugar Schuhe",
+    "getToKnowUs": "LERNEN SIE UNS KENNEN"
+  },
+  "bespoke": {
+    "title": "MAßANFERTIGUNG",
+    "subtitle": "Unsere Arbeit"
+  }
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filter by Price</title>
+    <style>
+      body {
+        background-color: #2d1816;
+        color: white;
+        font-family: Georgia, serif;
+        padding: 50px;
+      }
+
+      .line {
+        position: relative;
+        width: 300px;
+        height: 6px;
+        background-color: white;
+        border-radius: 3px;
+        margin: 20px 0;
+      }
+
+      .line input[type="range"] {
+        width: 100%;
+        -webkit-appearance: none;
+        background: transparent;
+        position: absolute;
+        top: -7px;
+        z-index: 2;
+      }
+
+      .line input[type="range"]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        height: 16px;
+        width: 16px;
+        background: white;
+        border-radius: 50%;
+        cursor: pointer;
+        position: relative;
+        z-index: 3;
+      }
+
+      .dot1 {
+        position: absolute;
+        top: -6px;
+        width: 16px;
+        height: 16px;
+        background-color: white;
+        border-radius: 50%;
+        pointer-events: none;
+        z-index: 1;
+      }
+
+      #priceDisplay {
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+
+      .product {
+        margin: 10px 0;
+        padding: 10px;
+        border: 1px solid white;
+        width: fit-content;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>FILTER by price</h2>
+
+    <div class="line">
+      <input type="range" id="priceSlider" min="0" max="2000" value="2000" />
+      <div class="dot1"></div>
+    </div>
+    <p id="priceDisplay">0 - 2000 EUR</p>
+
+    <!-- Dummy proizvodi -->
+    <div class="product" data-price="400">OXFORDS - 400 EUR</div>
+    <div class="product" data-price="800">LOAFERS - 800 EUR</div>
+    <div class="product" data-price="1200">TRAINERS - 1200 EUR</div>
+    <div class="product" data-price="1600">BOOTS - 1600 EUR</div>
+    <div class="product" data-price="1900">BUCKLE SHOES - 1900 EUR</div>
+
+    <script>
+      const slider = document.getElementById("priceSlider");
+      const dot = document.querySelector(".dot1");
+      const display = document.getElementById("priceDisplay");
+
+      function updateDotPosition() {
+        const value = slider.value;
+        const percent = (value / slider.max) * 100;
+        dot.style.left = `calc(${percent}% - 8px)`;
+        display.textContent = `0 - ${value} EUR`;
+
+        // Filtriranje proizvoda
+        document.querySelectorAll(".product").forEach((product) => {
+          const price = parseInt(product.getAttribute("data-price"));
+          product.style.display = price <= value ? "block" : "none";
+        });
+      }
+
+      slider.addEventListener("input", updateDotPosition);
+      updateDotPosition(); // inicijalno postavljanje
+    </script>
+  </body>
+</html>

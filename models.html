@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Strugar Models</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="models.css" />
+  </head>
+  <body>
+    <header class="header-main">
+      <nav class="header-main-nav">
+        <ul>
+          <li><a href="history.html">HISTORY</a></li>
+          <li><a href="bespoke.html">BESPOKE</a></li>
+        </ul>
+      </nav>
+      <div class="header-main-logo">
+        <a href="index.html">
+        <img src="Images/Group 13.png" alt="Strugar logo" />
+        </a>
+      </div>
+      <nav class="header-main-nav-2">
+        <ul>
+          <li><a href="#">MODELS</a></li>
+          <li><a href="#footer" class="nav-link smoothScroll" >CONTACT</a></li>
+        </ul>
+      </nav>
+      <div class="header-main-lang">
+        <div>DE</div>
+      </div>
+    </div>
+    <div class="header-main-search">
+        <a href="search.html">
+      <img src="Images/magnifying-glass 1.png" alt="search button">
+      </a>
+    </div>
+</div>
+</header>
+<body>
+    <div class="naslov">
+        <h3>MODELS</h3>
+    </div>
+    <div class="filter-container">
+        <h2>FILTER by price</h2>
+       
+        <div class="container">
+         <div class="line">
+               <div class="dot"></div>
+               <input type="range" min="0" max="2000" value="2000" class="slider" id="slider">
+               </div>
+            <div class="price" id="priceValue">0 - 2000 EUR</div>
+
+            <script>
+                // Uzmi elemente slider-a i element za prikaz cene
+                const slider = document.getElementById("slider");
+                const priceValue = document.getElementById("priceValue");
+            
+                // Kada se slider pomeri, ažuriraj vrednost prikaza
+                slider.addEventListener("input", function() {
+                    let value = slider.value;
+                    priceValue.textContent = `0 - ${value} EUR`; // Ažurira prikaženu vrednost u priceValue divu
+                });
+            </script>
+
+
+
+
+<div class="modeli">
+    
+        <h2 class="by-model">FILTER by model</h2>
+        <p>OXFORDS & DERBIES</p>
+        <p>BUCKLE SHOES</p>
+        <p>BOOTS</p>
+        <p> TRAINERS</p>
+        <p>LOAFERS</p>
+    </div>
+    <body>
+
+            
+            
+            
+    
+
+    
+
+
+</body>

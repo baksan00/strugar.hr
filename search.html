@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Strugar Search</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="search.css" />
+    <link rel="stylesheet" href="search.cssscript.js" />
+  </head>
+  <body>
+    <div class="search">
+        
+      <div class="x">
+        
+          <img src="x 1.png" alt="cancel" onclick="goBack()" />
+          <script>
+            function goBack() {
+              window.history.back();
+            }
+          </script>
+        </a>
+      </div>
+      <div id="searchContainer">
+      <div class="line"></div>
+      <div class="gumb">
+        <img src="Images/magnifying-glass 1 copy.png" id="searchBtn" alt="search sign" style="cursor:pointer"/>
+        <input type="text" id="searchInput" placeholder="search" />
+        <div id="suggestions"></div>
+        <script>
+            const searchInput = document.getElementById("searchInput");
+            const searchBtn = document.getElementById("searchBtn");
+          
+            // Mapa pojmova i gdje vode
+            const pojmovi = {
+              "shoes": "models.html",
+              "bespoke": "bespoke.html",
+              "tradition": "history.html",
+              "handmade": "bespoke.html",
+              "models": "models.html"
+              
+            };
+          
+            function izvrsiPretragu() {
+              const unos = searchInput.value.toLowerCase().trim();
+          
+              if (pojmovi.hasOwnProperty(unos)) {
+                const cilj = pojmovi[unos];
+          
+                // Ako počinje s # znači da je ID na stranici → scrollaj
+                if (cilj.startsWith("#")) {
+                  const element = document.querySelector(cilj);
+                  if (element) {
+                    element.scrollIntoView({ behavior: "smooth" });
+                  }
+                } else {
+                  // Inače idi na link (druga stranica)
+                  window.location.href = cilj;
+                }
+              } else {
+                alert("Pojam nije pronađen.");
+              }
+            }
+          
+            // Enter tipka
+            searchInput.addEventListener("keydown", function(e) {
+              if (e.key === "Enter") {
+                izvrsiPretragu();
+              }
+            });
+          
+            // Klik na ikonicu
+            searchBtn.addEventListener("click", izvrsiPretragu);
+          </script>
+    
+        
+      </div>
+    </div>
+</div>
+  </body>
+</html>
+‹‹
