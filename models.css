@@ -97,23 +97,7 @@ html{
     color: black;
 }
 
-.header-main-lang {
-    width: fit-content;
-    height: 100%;
-    cursor: pointer;
-    padding-right: 60px;
-    padding: 0px 20px;
-    font-family: MyCustomFont, sans-serif;
-    color: white;
-    font-size: small;
-    line-height: 50px;
-    row-gap: 10px;
-    transition: color 0.2s ease-in-out;
-}
 
-.header-main-lang:hover {
-    color: black;
-}
 
 .header-main-search img {
     width: 40px;
@@ -305,6 +289,15 @@ p{
     letter-spacing: 2px;
   }
   
- 
+  .under-construction-text{
+    flex-wrap: nowrap;
+    position: relative;
+    margin-left: 65%;
+    font-family: 'MyCustomFont';
+    text-align: center;
+    white-space: normal; /* važno da dozvoli prelom samo na <br> */
+    width: max-content;
+   
+}
   
  

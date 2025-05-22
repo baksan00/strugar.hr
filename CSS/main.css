@@ -1,0 +1,651 @@
+body{
+    background-color: #2B1717;
+}
+a {
+    cursor: pointer;
+}
+
+.header-main{
+    width: 100%;
+    height: 50px;
+    background-color:rgba(0,0,0,0,0);
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-main-nav{
+width: fit-content;
+
+   
+}
+.header-main-nav ul{
+    list-style: none;
+    margin-left: 400px
+
+
+}
+.header-main-nav ul li{
+    display: inline;
+    float: left;
+    
+
+}
+.header-main-nav ul li a{
+    padding: 0px 20px 0px 20px;
+    font-family: MyCustomFont, sans-serif;
+    color: white;
+    font-size: small;
+    line-height: 50px;
+    font-weight: inherit;
+    transition: color 0.2s ease-in-out;
+     
+    
+    }
+    .header-main-nav ul li a:hover{
+    
+         color: black;
+        
+        }
+   
+    @font-face {
+        font-family: MyCustomFont;
+        src: url('../garet/Garet-Book.woff2')format('woff2'),
+        url('../garet/Garet-Book.woff') format('woff'),
+        url('../garet/Garet-Book.ttf')format('truetype');
+    }
+        
+
+
+.header-main-logo{
+    width:fit-content;
+    height: 100%;
+    background-color: #2B1717;
+    padding-left: 60px;
+    padding-right: 60px;
+    display: flex;
+   
+}
+.header-main-logo img{
+    height: 25px;
+    align-self: center;
+    align-content: center;
+    cursor: pointer;
+    
+}
+
+
+
+.header-main-nav-2{
+    width: fit-content;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.header-main-nav-2 ul{
+
+        list-style: none;
+        margin-right: 300px
+    
+    
+    }
+
+.header-main-nav-2 ul li{
+    display: inline;
+    float: left;
+}
+.header-main-nav-2 ul li a{
+    padding: 0px 20px 0px 20px;
+    font-family: MyCustomFont, sans-serif;
+    color: white;
+    font-size: small;
+    line-height: 50px;
+    transition: color 0.2s ease-in-out;
+}
+.header-main-nav-2 ul li a:hover{
+    
+    color: black;
+   
+   }
+
+   .header-main-search img{
+    width: 40px;
+    height: auto;
+    padding-right: 20px;
+    margin-right: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-self: center;
+    align-content: end;
+    cursor: pointer;
+    margin-top: 14px;
+    color:white;
+    
+    
+    }
+    
+    .header-main-search img:hover{
+        opacity: 0.7;
+    }
+
+
+
+
+
+.image-container{
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+}
+.image-container img{
+    width: 100%;
+    display: block;
+
+}
+.text-overlay{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+    
+    
+}
+.text{
+    color: rgb(255, 255, 255) ;
+    font-family: 'Abhaya Libre', serif;
+    font-size: 60px;
+    font-weight: 100;
+    margin-right: 20px;
+    margin-top:200px;
+    
+}
+@font-face {
+    font-family: 'MonteCarlo';
+    src: url('../MonteCarlo/MonteCarlo-Regular.ttf')format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+.subtitle-text{
+    font-family: 'MonteCarlo';
+    font-size: 15px;
+    color: white;
+    margin-left: 90px;
+    margin-bottom: 1000px;
+    
+    font-weight: normal;
+    position: relative;
+}
+.bespoke-shoes{
+    color: white;
+    margin-top: 200px;
+    margin-left: -20px;
+    font-family: 'MonteCarlo';
+    
+}
+@font-face {
+    font-family: 'MonteCarlo';
+    src: url('../MonteCarlo/MonteCarlo-Regular.ttf')format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+.bespoke-shoes{
+    font-family: 'MonteCarlo';
+    font-size: 24px;
+    color: white;
+    position: absolute;
+    top: 60px;
+    left: 18%;
+}
+
+.section {
+    text-align: center;
+    padding: 20px 20px;
+    color: white;
+    position: relative;
+}
+@font-face {
+    font-family: MyCustomFont3;
+    src: url('../Tan-aegan/TAN - AEGEAN Regular.ttf')format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+    
+.title {
+    font-size: 50px;
+    font-family: 'TAN - AEGEAN Regular', sans-serif;
+    position: relative;
+    display: inline-block;
+    margin-top: 90px;
+    margin-bottom: -20px;
+    position:relative ;
+}
+@font-face {
+    font-family: 'MonteCarlo';
+    src: url('../MonteCarlo/MonteCarlo-Regular.ttf')format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+.little-title{
+    font-size: 50px;
+    font-family: 'MonteCarlo', cursive; 
+    position: relative;
+    margin-top: -20px;
+    margin-bottom: 30px;
+    font-weight: lighter; 
+   
+    
+}
+.title::before {
+    content: "";
+    position: absolute;
+    top: -85px;  /* Podešava visinu iznad naslova */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1px;  /* Debljina linije */
+    height: 80px; /* Dužina linije */
+    background-color: white;
+    
+}
+.s-text{
+    font-size: 16pX;
+    margin-bottom: 80px;
+    font-family: 'MyCustomFont', sans-serif ;
+    font-weight: lighter;
+    position: relative;
+}
+.btn{
+    font-size: 14px;
+    font-family: 'MyCustomFont',sans-serif;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid white;
+    margin-bottom: 30px;
+    transition: color 0.2s ease-in-out;
+    position: relative;
+
+    
+    
+}
+.btn:hover{
+   
+    color: black;
+    border-color: black;
+    
+}
+.image-container2{
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+}
+.image-container2 img{
+    width: 100%;
+    display: block;
+
+}
+.text-overlay2{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+    
+}
+@font-face {
+    font-family: MyCustomFont3;
+    src: url('../Tan-aegan/TAN - AEGEAN Regular.ttf')format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+    
+
+.naslov{
+    color: white;
+    font-family: 'TAN - AEGEAN Regular', serif;
+    font-size: 50px;
+    font-weight: 100;
+    margin-right: 1000px;
+    margin-top: -250px;
+    margin-bottom: -40px;
+    
+}
+.naslov::after {
+    content: "";
+    position: absolute;
+    top: -200px;  /* Podešava visinu iznad naslova */
+    left: 29%;
+    transform: translateX(-50%);
+    width: 80px;  /* Debljina linije */
+    height: 1px; /* Dužina linije */
+    background-color: white;
+}
+@font-face {
+    font-family: 'MonteCarlo';
+    src: url('../MonteCarlo/MonteCarlo-Regular.ttf')format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.podnaslov{
+    font-family: 'MonteCarlo', cursive;
+    font-size: 50px;
+    color: white;
+    margin-left: 5px;
+    margin-right: 1200px;
+    margin-top: -50px;
+    margin-bottom: 500px;
+    font-weight: normal;
+    display: inline;
+    white-space: nowrap;
+    position: relative;
+}
+.gumb{
+    font-size: 14px;
+    font-family: 'MyCustomFont',sans-serif;
+    color: white;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid white;
+    transition: color 0.2s ease-in-out;
+    cursor: pointer;
+    position: absolute;
+    top: 350px;
+    left: 0%;
+
+    
+    
+}
+.gumb:hover{
+   
+    color: black;
+    border-color: black;
+    
+}
+@font-face {
+    font-family: MyCustomFont3;
+    src: url('../Tan-aegan/TAN - AEGEAN Regular.ttf')format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+.naslov3{
+    font-family: 'MyCustomFont3';
+    color: white;
+    font-size:50px ;
+    margin-left: 1100px;
+    margin-top: -900px;
+    margin-bottom: -40px;
+}
+@font-face {
+    font-family: 'MonteCarlo';
+    src: url('../MonteCarlo/MonteCarlo-Regular.ttf')format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.podnaslov3{
+font-family: 'MonteCarlo';
+color: white;
+font-size:50px ;
+margin-left: 1180px;
+margin-top: 10px;
+display: inline;
+white-space: nowrap;
+position: relative;
+}
+.gumb3{
+    font-size: 14px;
+    font-family: 'MyCustomFont',sans-serif;
+    color: white;
+    margin-left:1190px ;
+    margin-top: 10px;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid white;
+    transition: color 0.2s ease-in-out;
+    cursor: pointer;
+}
+.gumb3:hover {
+color: black;
+border-color: black;
+}
+
+footer {
+    background-color: #365020; /* Tamno zelena */
+    color: white;
+    padding: 100px 0;
+    position: absolute;
+    margin-top: 690px;;
+    width: 100%;
+}
+
+/* Glavni kontejner */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    padding-bottom: 80px;
+    
+}
+@font-face {
+    font-family: 'PublicSans';
+    src: url('../fonts/public sans/PublicSans-VariableFont_wght.ttf')format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Stilizacija sekcija sa informacijama */
+.footer-info {
+    display: flex;
+    flex: 1;
+    gap: 50px;
+    
+}
+
+.location {
+    flex: 1;
+    min-width: 250px;
+    margin-left: 100px;
+    margin-top: -50px;
+}
+
+@font-face {
+    font-family: 'PublicSans';
+    src: url('../public sans/public-sans.bold.ttf')format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+h3, h4 {
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-family: 'PublicSans';
+}
+
+@font-face {
+    font-family: 'QTCS';
+    src: url('../Quattrocento sans/QuattrocentoSans-Regular.ttf')format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.adresa {
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-family:'QTCS' ;
+    margin-top: 20px;
+    
+}
+@font-face {
+    font-family: 'QTCS-b';
+    src: url('../Quattrocento sans/QuattrocentoSans-Bold.ttf')format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+B{
+    font-family: 'QTCS-b';
+}
+.WH1{
+    margin-top: 20px;;
+}
+.adresa2{
+    font-family:'QTCS' ;
+    margin-top: 20px;
+    font-size: 14PX;
+}
+/* Ikonice društvenih mreža */
+.fb1 img {
+    width: 25px;
+    margin-left: 0px;
+    transition: 0.3s;
+    margin-top: 20px;;
+    
+}
+
+.fb1 img:hover {
+    opacity: 0.7;
+}
+.inst1{
+    width: 25px;
+    margin-left: 30px;
+    transition: 0.3s;
+   margin-top:-29px;
+    cursor: pointer;
+    
+}
+.inst1 img:hover {
+    opacity: 0.7;
+}
+
+/* Kontakt forma */
+.contact-form {
+    flex: 1;
+    min-width: 300px;
+    
+}
+.Strugar-bg{
+    margin-left: -350px;
+}
+.adresa3{
+    font-family: 'QTCS';
+    font-size: 14px;
+    margin-left: -350px;
+    margin-top: 20px;
+}
+.WH2{
+    margin-left: -350px;
+    margin-top: 20px;
+}
+.adresa4{
+    font-family:'QTCS' ;
+    margin-top: 20px;
+    font-size: 14PX;
+    margin-left: -350px;
+}
+.fb2 img{
+    width: 25px;
+    margin-left: -350px;
+    transition: 0.3s;
+    margin-top: 20px;;
+
+}
+.fb2 img:hover {
+    opacity: 0.7;
+}
+.inst2{
+    width: 25px;
+    margin-top:-30px;
+    margin-left: -320px;
+    transition: 0.3s;
+    cursor: pointer;
+    position: relative;
+
+}
+.inst2 img:hover{
+opacity: 0.7;
+}
+
+.contact-form{
+    padding-top: 40px;
+    padding-left:50px;
+    margin-top: -370px;
+}
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: rgb(255, 255, 255);
+    border-radius: 0px;
+    background-color: white;
+    font-family: 'MyCustomFont';
+    margin-top: 5px;
+    margin-bottom: 15px;
+    
+   
+    
+}
+.NASLOVI{
+    color:white
+}
+.contact-form{
+position:absolute;
+
+margin-left: 850px;
+color: rgb(0, 0, 0);
+font-size: 14.px;
+}
+
+.contact-form textarea {
+    height: 80px;
+}
+
+.contact-form button {
+    background: none;
+    color: white;
+    border: 1px solid white;
+    padding: 6px 30px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: 'MyCustomFont';
+    font-size: 14px;
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.contact-form button:hover {
+   border-color: black;
+    color: black;
+}
+
+
+/* Responzivnost */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer-info {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contact-form {
+        margin-top: 20px;
+    }
+}
+.cr{
+    color: white;
+    font-family: MyCustomFont;
+    margin-left: -350px;
+    margin-top: 30px;
+    font-size: 12px;
+}

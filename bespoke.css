@@ -97,23 +97,7 @@ html{
     color: black;
 }
 
-.header-main-lang {
-    width: fit-content;
-    height: 100%;
-    cursor: pointer;
-    padding-right: 60px;
-    padding: 0px 20px;
-    font-family: MyCustomFont, sans-serif;
-    color: white;
-    font-size: small;
-    line-height: 50px;
-    row-gap: 10px;
-    transition: color 0.2s ease-in-out;
-}
 
-.header-main-lang:hover {
-    color: black;
-}
 
 .header-main-search img {
     width: 40px;
@@ -306,6 +290,7 @@ html{
     position: absolute;
     margin-top: 1800px;
     z-index: 11;
+    width: 100%;
 
 }
 
@@ -314,7 +299,7 @@ html{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    width: 1440px;
+    width: 100%;
     margin: 0 auto;
     flex-wrap: wrap;
     padding-bottom: 80px;
