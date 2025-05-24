@@ -129,7 +129,7 @@ html{
     color: white;
     font-family: 'MyCustomFont3';
     font-size:30px ;
-    margin-left: 600px;
+    margin-left: 77vh;
     margin-top: 40px;
 
 }
@@ -292,7 +292,7 @@ p{
   .under-construction-text{
     flex-wrap: nowrap;
     position: relative;
-    margin-left: 65%;
+    margin-left: 72%;
     font-family: 'MyCustomFont';
     text-align: center;
     white-space: normal; /* važno da dozvoli prelom samo na <br> */

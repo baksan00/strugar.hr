@@ -427,7 +427,7 @@ footer {
     padding: 100px 0;
     position: absolute;
     margin-top: 70px;
-    width: 100%;
+    width: 180vh;
 }
 
 /* Glavni kontejner */
@@ -435,7 +435,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    width: 100%;
+    width: 180vh;
     margin: 0 auto;
     flex-wrap: nowrap;
     padding-bottom: 80px;

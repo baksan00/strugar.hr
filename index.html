@@ -9,6 +9,7 @@
     
   </head>
   <body>
+    
     <header class="header-main">
       <nav class="header-main-nav">
         <ul>
@@ -18,7 +19,7 @@
         
         
         </ul>
-        
+      
       </nav>
       
       <div class="header-main-logo">
@@ -39,11 +40,52 @@
         <img src="Images/magnifying-glass 1.png" alt="search button">
       </a>
       </div>
+      
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    
+      <div class="menu-overlay" id="menuOverlay">
+        <a href="history.html">HISTORY</a>
+        <a href="bespoke.html">BESPOKE</a>
+        <a href="models.html">MODELS</a>
+        <a href="contact.html">CONTACT</a>
+      </div>
+    
+      <script>
+        const hamburger = document.getElementById('hamburger');
+        const menuOverlay = document.getElementById('menuOverlay');
+        const menuLinks = menuOverlay.querySelectorAll('a');
+    
+        hamburger.addEventListener('click', () => {
+          hamburger.classList.toggle('active');
+          menuOverlay.classList.toggle('open');
+        });
+    
+        menuLinks.forEach(link => {
+          link.addEventListener('click', (e) => {
+            menuLinks.forEach(l => l.classList.remove('clicked'));
+            e.target.classList.add('clicked');
+            // Menu will stay open — if you want to close it:
+            // hamburger.classList.remove('active');
+            // menuOverlay.classList.remove('open');
+          });
+        });
+      </script>
+       
+     
+    
+    
     </header>
-    <div class="image-container">
+    <body>
+
+    
+     <div class="image-container">
       <img
         src="430A213D-EDA7-45B3-9202-5035844C4BA7_1_105_c.jpg"
-        alt="shoes on the floor"
+        alt="shoe in the making"
       />
       <div class="text-overlay">
         <p class="text">STRUGAR</p>
